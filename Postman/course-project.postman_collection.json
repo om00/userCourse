@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "0d083ab0-269d-4867-8d74-d8dc8fe060a8",
+		"name": "course-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44692092"
+	},
+	"item": [
+		{
+			"name": "getCoures",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/getAllcourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"getAllcourse"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/courses"
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/getAllcourse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"getAllcourse"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/courses"
+			},
+			"response": []
+		},
+		{
+			"name": "UserCourse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":4,\r\n    \"course_id\":6,\r\n    \"action\":\"assign\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/user-course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"user-course"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/courses"
+			},
+			"response": []
+		},
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ashok\",\r\n    \"email\":\"ashok@gmail.com\",\r\n    \"age\":524\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/create_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"create_user"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/courses"
+			},
+			"response": []
+		}
+	]
+}
