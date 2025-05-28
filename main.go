@@ -70,8 +70,6 @@ func main() {
 	http.HandleFunc("/user-course", app.UserCourse)
 	http.HandleFunc("/user-details", app.UserDetials)
 
-	// http.HandleFunc("/unblock-user", app.UnblockUser)
-
 	fmt.Println("Server started on :8085")
 	log.Fatal(http.ListenAndServe(":8085", nil))
 }

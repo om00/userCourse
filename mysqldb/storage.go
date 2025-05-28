@@ -62,7 +62,6 @@ func RunMigrations(cmd string) {
 func CallSeederFunction(db *sql.DB, funcName string) {
 	seedersMap := getSeederFunctions()
 
-	fmt.Println(db)
 	if seedFunc, exists := seedersMap[funcName]; exists {
 
 		reflect.ValueOf(seedFunc).Call([]reflect.Value{reflect.ValueOf(db)})

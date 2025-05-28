@@ -20,5 +20,5 @@ VALUES
 	if err != nil {
 		log.Fatalf("Error seeding products table: %v", err)
 	}
-	fmt.Println("Product data seeded successfully")
+	fmt.Println("user data seeded successfully")
 }

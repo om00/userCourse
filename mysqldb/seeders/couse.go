@@ -18,7 +18,7 @@ VALUES
     ('Machine Learning Basics', 'A fundamental course to understand the basics of machine learning algorithms.', now());
     `)
 	if err != nil {
-		log.Fatalf("Error seeding products table: %v", err)
+		log.Fatalf("Error seeding course table: %v", err)
 	}
 	fmt.Println("course  data seeded successfully")
 }
